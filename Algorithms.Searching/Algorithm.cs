@@ -26,8 +26,11 @@ namespace Algorithms.Searching
             return index <= collection.Length - 1 ? (Nullable<int>)index : null;
         }
 
+        //
         public int? BinarySearch(int[] collection, int elementToFind)
         {
+            collection.OrderBy(x => x);
+
             return null;
         }
     }

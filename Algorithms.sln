@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{7B8D57A6-338A-4343-98EC-54288332C5E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Searching.Tests", "Algorithms.Searching.Tests\Algorithms.Searching.Tests.csproj", "{67A76E25-5F22-47E0-87C0-37B8275C58FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,11 +23,16 @@ Global
 		{3BFED11A-8640-492C-B56D-310F03439961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BFED11A-8640-492C-B56D-310F03439961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BFED11A-8640-492C-B56D-310F03439961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A76E25-5F22-47E0-87C0-37B8275C58FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A76E25-5F22-47E0-87C0-37B8275C58FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A76E25-5F22-47E0-87C0-37B8275C58FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A76E25-5F22-47E0-87C0-37B8275C58FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3BFED11A-8640-492C-B56D-310F03439961} = {7B8D57A6-338A-4343-98EC-54288332C5E4}
+		{67A76E25-5F22-47E0-87C0-37B8275C58FF} = {F533111C-50CC-4863-8DA9-73F71F297FA2}
 	EndGlobalSection
 EndGlobal
