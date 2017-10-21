@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Searching", "Algorithms.Searching\Algorithms.Searching.csproj", "{3BFED11A-8640-492C-B56D-310F03439961}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F533111C-50CC-4863-8DA9-73F71F297FA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps", "{7CAFB89B-2D93-4862-9FA8-D11C1AED5CEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{7B8D57A6-338A-4343-98EC-54288332C5E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BFED11A-8640-492C-B56D-310F03439961} = {7B8D57A6-338A-4343-98EC-54288332C5E4}
 	EndGlobalSection
 EndGlobal
