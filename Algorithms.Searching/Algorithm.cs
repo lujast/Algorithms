@@ -34,13 +34,12 @@ namespace Algorithms.Searching
                 return null;
             }
 
-            collection.OrderBy(x => x);
 
             var leftIndex = 0;
             var rightIndex = collection.Length - 1;
 
             while (leftIndex <= rightIndex)
-            {       
+            {
                 int middleIndex = (leftIndex + rightIndex) / 2;
                 if (collection[middleIndex] == elementToFind)
                 {
@@ -48,11 +47,11 @@ namespace Algorithms.Searching
                 }
                 else if (collection[middleIndex] > elementToFind)
                 {
-                    rightIndex = middleIndex-1;
+                    rightIndex = middleIndex - 1;
                 }
                 else
                 {
-                    leftIndex = middleIndex+1;
+                    leftIndex = middleIndex + 1;
                 }
             }
 
@@ -60,11 +59,39 @@ namespace Algorithms.Searching
         }
 
 
-
-        public int? BinarySearchWithRecursion(int[] collection, int elementToFind)
+        // computational complexity is linear O(log2(N));
+        public int? BinarySearchUsingRecursion(int[] collection, int startingIndex, int endingIndex,
+            int elementToFind)
         {
+            if(collection== null || collection.Length==0)
+            {
+                return null;
+            }
 
-            return null;
+            if(startingIndex == endingIndex)
+            {
+                return collection[startingIndex] == elementToFind ? (Nullable<int>)startingIndex : null;
+            }
+
+
+            int middleIndex = (startingIndex + endingIndex) / 2;
+
+            if (collection[middleIndex] == elementToFind)
+            {
+                return middleIndex;
+            }
+
+            if (collection[middleIndex] < elementToFind)
+            {
+                return BinarySearchUsingRecursion(collection, middleIndex+1,  endingIndex, elementToFind);
+            }
+            else
+            {
+                return BinarySearchUsingRecursion(collection, startingIndex, middleIndex-1, elementToFind);
+            }
+
         }
+
+
     }
 }
