@@ -6,21 +6,18 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Sorting
 {
-    public class SelectionSort : ISortingAlgorithm
+    public class BubbleSort : ISortingAlgorithm
     {
-
-        // computational complexity is always O(N^2);
         public void Sort(int[] collection)
         {
-            for (int i = 0; i < collection.Length - 1; i++)
-            {
-                var min = collection[i];
 
-                for (int j = i + 1; j <= collection.Length - 1; j++)
+            for (int i = 0; i < collection.Length; i++)
+            {
+                for (int j = collection.Length - 1; j > i; j--)
                 {
-                    if (collection[j] < collection[i])
+                    if (collection[j] < collection[j - 1])
                     {
-                        Swap(ref collection[j], ref collection[i]);
+                        Swap(ref collection[j], ref collection[j - 1]);
                     }
                 }
             }
