@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.AccordingToBook.Chapter2
+namespace Algorithms.AccordingToBook.Chapter5
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-
         }
     }
 }

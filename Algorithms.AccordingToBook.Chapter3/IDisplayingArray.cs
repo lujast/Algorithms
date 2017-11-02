@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.AccordingToBook.Chapter2
+namespace Algorithms.AccordingToBook.Chapter3
 {
-    class Program
+    public interface IDisplayingArray
     {
-        static void Main(string[] args)
-        {
-
-
-        }
+        string Display(int[] array);
     }
 }

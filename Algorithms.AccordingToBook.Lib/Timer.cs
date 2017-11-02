@@ -21,6 +21,8 @@ namespace Algorithms.AccordingToBook.Lib
 
         public void Start()
         {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
             this.startingTime = Process.GetCurrentProcess().Threads[0].UserProcessorTime;
 
         }
